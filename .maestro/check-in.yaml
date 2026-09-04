@@ -1,0 +1,12 @@
+appId: com.willdeschepper.eventcheckin
+---
+- launchApp:
+    clearState: true
+- tapOn:
+    id: event-card-event-health-2026
+- tapOn:
+    id: manual-code-input
+- inputText: EVT-8F31A2
+- tapOn:
+    id: confirm-check-in-button
+- assertVisible: Check-in confirmado
