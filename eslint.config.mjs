@@ -6,4 +6,17 @@ export default defineConfig([
   {
     ignores: ['dist/*', 'coverage/*'],
   },
+  {
+    files: ['scripts/load/**/*.js'],
+    languageOptions: {
+      globals: {
+        __ENV: 'readonly',
+        __ITER: 'readonly',
+        __VU: 'readonly',
+      },
+    },
+    rules: {
+      'import/no-unresolved': 'off',
+    },
+  },
 ]);
